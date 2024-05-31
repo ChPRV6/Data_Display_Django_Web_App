@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary Report</title>
+</head>
+<body>
+    <h1>Summary Report</h1>
+    <table border="1">
+        <tr>
+            <th>State</th>
+            <th>DPD</th>
+            <th>Count</th>
+        </tr>
+        {% for row in summary %}
+        <tr>
+            <td>{{ row.State }}</td>
+            <td>{{ row.DPD }}</td>
+            <td>{{ row.Count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
